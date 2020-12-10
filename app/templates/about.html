@@ -1,0 +1,34 @@
+{% extends "_header.html" %}
+
+<!--
+    What is ABSI
+    What can ABSI do for you
+-->
+<!doctype html>
+<html>
+
+    {% block head %}
+    {{ super() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main-pages.css') }}">
+    {% endblock %}
+
+    {% block content %}
+       <h2 id="about-title">About ABSI</h2>
+       <p id="about-text">During the COVID-19 pandemic of 2020, many business shut their doors for good. Some, however, did open. One of these small businesses
+           was <i>Mystic Mixtures Potion Bar</i>. It was run out of a small kitchen in Pittsburgh, PA and had only one employee who was also the owner of this new business.
+           The creator of ABSI watched as her significant other learned the ins and out of running a business and the difficulties that come with it. The couple had to spend time
+           learning about how to take professional photos, how a business's social media should run, finding markets to sell at, and the list goes on. <br> ABSI was created to help 
+           those in a similar situation. Starting a business should be fun. ABSI works to keep it that way.
+       </p>
+       <h2 id="about-title">What ABSI can do for you...</h2>
+       <p id="about-text">
+           <h3 id="about-subtitle">Calendar</h3>
+           <p id="about-text">ABSI's calendar keeps you on track.</p>
+           <h3 id="about-subtitle">Recommendations</h3>
+           <p id="about-text">Get advice on how to better your business.</p>
+           <h3 id="about-subtitle">Finances</h3>
+           <p id="about-text">Money</p>
+       </p>
+    {% endblock %}
+</html>   
