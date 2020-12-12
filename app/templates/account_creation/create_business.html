@@ -1,0 +1,38 @@
+{% extends "_header.html" %}
+
+<!--
+    add business information:
+    1. Business Name
+    2. An email if it is different than the owner's
+    3. A phone number if it is different than the owner's
+    4. A URL if applicable 
+-->
+<!doctype html>
+<html>
+
+    {% block head %}
+    {{ super() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='create_account.css') }}">
+    {% endblock %}
+
+    {% block content %}
+        <h2 id="create-title">BUSINESS INFORMATION</h2>
+        <form action="/" method="POST">
+            <div class="container">
+                <label id="input-label" for="business_name">Name</label> 
+                <input id="input-box" type="text" placeholder="Business Name*" required> <br>
+
+                <label id="input-label" for="email">Email</label> 
+                <input id="input-box" type="text" placeholder="Enter Email if Different than Owner Email" required> <br> 
+
+                <label id="input-label" for="phone-number">Phone</label> 
+                <input id="input-box" type="text" placeholder="Enter Phone Number if different than owner phone number"> <br>
+
+                <label id="input-label" for="url">URL</label> 
+                <input id="input-box" type="text" placeholder="Enter Wesbite Address"> <br>
+                <button id="confirm-acct-box" type="submit"><a href="{{ url_for('personal_business') }}">Continue</a></button>
+            </div>
+        </form>
+    {% endblock %}
+</html>   

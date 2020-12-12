@@ -18,5 +18,21 @@ def login():
 def help():
     return render_template("help.html")
 
+@app.route("/create_owner")
+def create_owner():
+    return render_template("create_owner.html")
+
+@app.route("/create_business")
+def create_business():
+    return render_template("create_business.html")
+
+@app.route("/personal_business")
+def personal_business():
+    return render_template("personal_business.html")
+
+@app.route("/create_password")
+def create_password():
+    return render_template("create_password.html")
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)

@@ -1,0 +1,33 @@
+{% extends "_header.html" %}
+
+<!--
+    login page:
+    A user can login with username and password
+    They have the option to recover account if the password was forgotten
+    They have the option to create an account if they do not have one
+-->
+<!doctype html>
+<html>
+
+    {% block head %}
+    {{ super() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main-pages.css') }}">
+    {% endblock %}
+
+    {% block content %}
+        <h2 id="about-title">LOGIN</h2>
+        <form action="/" method="POST">
+            <div class="container">
+                <label id="input-label" for="username">USERNAME</label> <br>
+                <input id="input-box" type="text" placeholder="Enter Username" required>
+                <br>
+                <label id="input-label" for="pswrd">PASSWORD</label> <br>
+                <input id="input-box" type="text" placeholder="Enter Password" required> <br>
+                <span id="forgot-pwd"><u>Forgot Password</u></span>
+                <button id="login-box" type="submit">Login</button> <br>
+                <span id="create-acct"><a href="{{ url_for('create_owner') }}"><u>Create Account</u></a></span>
+            </div>
+        </form>
+    {% endblock %}
+</html>   

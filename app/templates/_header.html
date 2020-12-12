@@ -1,0 +1,31 @@
+<!--
+    header for the entirety of absi
+    1. Logo
+    2. Login
+    3. About
+    4. Help
+-->
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+    {% endblock %}
+  </head>
+  <header>
+    <nav class="header-nav">
+        <ul class="header-menu-left">
+            <li>
+                <a href="{{ url_for('home') }}"><img class="absi-logo" src="../static/images/logo.png" alt="paper plane logo"></a> 
+            </li>
+        </ul>
+        <ul class="header-menu-right">
+            <li><a class="nav-item" id="small-menu" href="{{ url_for('about') }}">ABOUT</a></li>
+            <li><a class="nav-item" id="small-menu" href="{{ url_for('help') }}">HELP</a></li>
+            <li><a class="nav-item" id="small-menu" href="{{ url_for('login') }}">LOGIN</a></li>
+        </ul>
+    </nav>
+  </header>
+  {% block content %}
+  {% endblock %}
+</html>         

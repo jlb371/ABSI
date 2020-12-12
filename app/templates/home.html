@@ -1,0 +1,23 @@
+{% extends "_header.html" %}
+
+<!--
+    home page
+-->
+<!doctype html>
+<html>
+
+    {% block head %}
+    {{ super() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main-pages.css') }}">
+    {% endblock %}
+
+    {% block content %}
+       <div class="column">
+        <img src="../static/images/absi-home.png" alt="business owner">
+        <img src="../static/images/calendar.png" alt="calendar">
+        <img src="../static/images/recommendations.png" alt="note taking">
+        <img src="../static/images/finances.png" alt="piggy bank">
+       </div>
+    {% endblock %}
+</html>   

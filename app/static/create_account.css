@@ -1,0 +1,123 @@
+.container {
+    height: 100%;
+    width: 100%;
+    margin-left: 35%;
+    margin-top: 0;
+}
+
+.container input {
+    margin-left: 5em;
+}
+
+.container label {
+    position: absolute;
+}
+
+.small-container {
+    margin-left: 30%;
+}
+
+#create-title {
+    font-size: 50px;
+    color: #5a5a5a;
+    font-family: "Bookman", serif;
+    text-align: center;
+}
+
+#input-label {
+    font-size: 35px;
+    color: #5a5a5a;
+    font-family: "Bookman", serif;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+#small-input-box {
+    font-size: 20px;
+    font-family: "Bookman", serif;
+    width: 5%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#input-box {
+    font-size: 20px;
+    font-family: "Bookman", serif;
+    width: 25%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#create-acct-box {
+    width: 11.5%;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #a8a8a8;
+    border: 1px solid #a8a8a8;
+    color: white;
+    font-size: 20px;
+    font-family: "Bookman", serif;
+    margin-left: 24%;
+    margin-bottom: 1%;
+}
+
+#create-acct-box:hover {
+    background-color: #dadada;
+}
+
+#acct-link-text {
+    font-size: 35px;
+    color: #5a5a5a;
+    font-family: "Bookman", serif;
+    text-align: center;
+}
+
+#acct-link-subtext {
+    font-size: 30px;
+    color: #5a5a5a;
+    font-family: "Bookman", serif;
+    text-align: center;
+}
+
+#radio-text {
+    font-size: 27px;
+    color: #5a5a5a;
+    font-family: "Bookman", serif;
+}
+
+.radio-bttn {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 15%;
+}
+
+#confirm-link-box {
+    width: 11.5%;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #a8a8a8;
+    border: 1px solid #a8a8a8;
+    color: white;
+    font-size: 20px;
+    font-family: "Bookman", serif;
+    margin-left: 22%;
+    margin-top: 3%;
+}
+
+#confirm-link-box:hover {
+    background-color: #dadada;
+}

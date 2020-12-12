@@ -1,0 +1,19 @@
+{% extends "_header.html" %}
+
+<!--
+    help page:
+    * needs additions *
+-->
+<!doctype html>
+<html>
+
+    {% block head %}
+    {{ super() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main-pages.css') }}">
+    {% endblock %}
+
+    {% block content %}
+       
+    {% endblock %}
+</html>   
