@@ -1,0 +1,23 @@
+{% extends "_header.html" %}
+
+<!--
+    What is ABSI
+  *(additions need to be made)  What can ABSI do for you *
+-->
+<!doctype html>
+<html>
+
+    {% block head %}
+    {{ super() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main-pages.css') }}">
+    {% endblock %}
+
+    {% block content %}
+        <div class="conf-container">
+            <h2 id="about-title">Thank you for choosing ABSI!</h2>
+            <p id="conf-text">You will receive an email confirming your account. <br> If you have any questions or concerns, you can contact us at
+            </p>
+        </div>
+    {% endblock %}
+</html>   

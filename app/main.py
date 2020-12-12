@@ -34,5 +34,9 @@ def personal_business():
 def create_password():
     return render_template("create_password.html")
 
+@app.route("/confirmation_page")
+def confirmation_page():
+    return render_template("confirmation_page.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)

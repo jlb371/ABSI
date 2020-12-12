@@ -1,0 +1,38 @@
+{% extends "_header.html" %}
+
+<!--
+    create owner account:
+    owner name
+    owner email
+    owner phone number
+-->
+<!doctype html>
+<html>
+
+    {% block head %}
+    {{ super() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='create_account.css') }}">
+    {% endblock %}
+
+    {% block content %}
+        <h2 id="create-title">OWNER INFORMATION</h2>
+        <form action="/" method="POST">
+            <div class="container">
+                <label id="input-label" for="owner_name">Name</label> 
+                <input id="small-input-box" type="text" placeholder="Prefix">
+                <input id="input-box" type="text" placeholder="First Name*" required> <br>
+                <input id="small-input-box" type="text" placeholder="Mi.">
+                <input id="input-box" type="text" placeholder="Last Name*" required>
+                <input id="small-input-box" type="text" placeholder="Suffix"> <br> <br>
+
+                <label id="input-label" for="email">Email</label> 
+                <input id="input-box" type="text" placeholder="Enter Email" required> <br>  <br>
+
+                <label id="input-label" for="phone-number">Phone</label> 
+                <input id="input-box" type="text" placeholder="Enter Phone Number"> <br>
+                <button id="create-acct-box" type="submit"><a href="{{ url_for('create_business') }}">Continue</a></button>
+            </div>
+        </form>
+    {% endblock %}
+</html>   

@@ -17,6 +17,18 @@
     margin-left: 30%;
 }
 
+.password-container {
+    margin-left: 37%;
+}
+
+.password-container input {
+    margin-left: 10em;
+}
+
+.password-container label {
+    position: absolute;
+}
+
 #create-title {
     font-size: 50px;
     color: #5a5a5a;
@@ -119,5 +131,21 @@
 }
 
 #confirm-link-box:hover {
+    background-color: #dadada;
+}
+
+#confirm-box {
+    width: 16%;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #a8a8a8;
+    border: 1px solid #a8a8a8;
+    color: white;
+    font-size: 20px;
+    font-family: "Bookman", serif;
+    margin-left: 25%;
+}
+
+#confirm-box:hover {
     background-color: #dadada;
 }

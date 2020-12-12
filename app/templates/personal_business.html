@@ -1,0 +1,31 @@
+{% extends "_header.html" %}
+
+<!--
+    link accounts:
+    see if a user wants to link accounts (Facebook, Square, etc)
+    * no functionality yet *
+-->
+<!doctype html>
+<html>
+
+    {% block head %}
+    {{ super() }}
+        <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='create_account.css') }}">
+    {% endblock %}
+
+    {% block content %}
+        <h2 id="create-title">LINK ACCOUNTS</h2>
+        <form action="/" method="POST">
+            <h2 id="acct-link-text">Would you like to link other accounts with ABSI?</h2>
+            <h3 id="acct-link-subtext">Note: You can change this at any time</h3>
+            <div class="small-container">
+            <input class="radio-bttn" type="radio" checked="checked" name="radio">
+            <label for="yes" id="radio-text"><b>Yes</b></label>
+            <input class="radio-bttn" type="radio" checked="checked" name="radio">
+            <label for="no" id="radio-text"><b>No</b></label> <br>
+            <button id="confirm-link-box" type="submit"><a href="{{ url_for('create_password') }}">Continue</a></button>
+            </div>
+        </form>
+    {% endblock %}
+</html>   

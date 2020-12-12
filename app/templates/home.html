@@ -10,6 +10,7 @@
     {{ super() }}
         <link rel="stylesheet" href="{{ url_for('static', filename='application.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='main-pages.css') }}">
+        <script src="{{ url_for('static', filename='main-pages.js') }}"></script>
     {% endblock %}
 
     {% block content %}
@@ -19,5 +20,6 @@
         <img src="../static/images/recommendations.png" alt="note taking">
         <img src="../static/images/finances.png" alt="piggy bank">
        </div>
+       <button onclick="topFunction()" id="myBtn" title="Back to Top">Back to Top</button>
     {% endblock %}
 </html>   
